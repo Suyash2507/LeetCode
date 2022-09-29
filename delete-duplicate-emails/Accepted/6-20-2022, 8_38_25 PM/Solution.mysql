@@ -1,0 +1,8 @@
+// https://leetcode.com/problems/delete-duplicate-emails
+
+DELETE m
+FROM 
+Person m,
+Person n
+WHERE
+m.email = n.email AND m.id > n.id;
